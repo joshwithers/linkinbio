@@ -241,6 +241,7 @@ The theme is configured through the `src/siteConfig.json` file. Here's what you 
 
 ## Tips for Success
 
+- **Update site URL in astro.config.mjs**: in the root of the project update the site URL in astro.config.mjs - all other config happens in the *src/siteConfig.json* file
 - **Keep it authentic**: Write in your own voice
 - **Test locally**: Make sure your JSON is valid
 - **Optimise images**: Use WebP format for better performance
@@ -258,7 +259,7 @@ The theme is configured through the `src/siteConfig.json` file. Here's what you 
      - Add a new repository secret named `CF_PAGES_WEBHOOK_URL`
      - Paste your Cloudflare deploy hook URL as the value
 
-  3. **Customize the Schedule**:
+  3. **Customise the Schedule**:
      - Edit the cron schedule in /.github/workflows/scheduled-rss-build.yml
      - The current setup rebuilds 3 times daily (6 AM, 2 PM, 10 PM Hobart time)
      - Adjust the cron expressions to match your preferred update frequency

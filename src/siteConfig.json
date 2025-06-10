@@ -144,7 +144,7 @@
     }
   ],
   "referralLinks": {
-    "enabled": true,
+    "enabled": false,
     "links": [
       {
         "title": "10% off Fastmail, my preferred email service",

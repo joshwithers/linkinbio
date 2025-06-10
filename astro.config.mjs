@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import icon from 'astro-icon';
 
 export default defineConfig({
-  site: "https://joshwithers.com.au",
+  site: "https://linkinbio-chi.vercel.app",
   integrations: [
     tailwind(),
     sitemap(),
