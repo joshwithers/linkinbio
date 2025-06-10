@@ -4,6 +4,8 @@ A modern, customisable link-in-bio theme built with Astro and Tailwind CSS. Crea
 
 Inspired by Trevor Tyler Lee's [Treelink](https://treelink.app) app.
 
+View demo at [linkinbio.josh.show](https://linkinbio.josh.show) and my own site [joshwithers.com.au](https://joshwithers.com.au)
+
 ## 🎨 About This Theme
 
 My link in bio Astro website is a clean, professional theme designed for creators, entrepreneurs, and professionals who want a centralised hub for their online presence. The theme focuses on simplicity, performance, and customisation.
@@ -15,6 +17,8 @@ You'd click a link in bio on Instagram and between the social media app's in-bui
 I built this to be fast, not just fast loading, but fast to get into and then equally as fast to get out of. There's no blog collections, no tracking, minimal scripting and CSS, and people smarter than me could probably make it faster.
 
 ![Pagespeed Insights of the link in bio website [⌘](https://ik.imagekit.io/withers/pagespeed-insights-linkinbio_z7L1cGBuc)](https://ik.imagekit.io/withers/pagespeed-insights-linkinbio_z7L1cGBuc)
+
+Obviously the design is a bit esoteric. I was trying to make something different and weird and found inspiration in shopping recipets, takeaway menues, and the web of old.
 
 ### Theme Features
 
