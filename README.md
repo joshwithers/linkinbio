@@ -12,10 +12,6 @@ I built it because I wanted a really fast and fun bio link that sends people to 
 
 You'd click a link in bio on Instagram and between the social media app's in-built browser being slow, internet being slow, and everything just being harder, the page would also be slow.
 
-![Website preview on mobile [⌘](https://ik.imagekit.io/withers/Website_preview_on_mobile_4wJ5wE4X0)](https://ik.imagekit.io/withers/Website_preview_on_mobile_4wJ5wE4X0)
-
-![Safari web preview [⌘](https://ik.imagekit.io/withers/Safari_web_preview_Gzd4OdPJm1)](https://ik.imagekit.io/withers/Safari_web_preview_Gzd4OdPJm1)
-
 I built this to be fast, not just fast loading, but fast to get into and then equally as fast to get out of. There's no blog collections, no tracking, minimal scripting and CSS, and people smarter than me could probably make it faster.
 
 ![Pagespeed Insights of the link in bio website [⌘](https://ik.imagekit.io/withers/pagespeed-insights-linkinbio_z7L1cGBuc)](https://ik.imagekit.io/withers/pagespeed-insights-linkinbio_z7L1cGBuc)
@@ -37,14 +33,21 @@ I built this to be fast, not just fast loading, but fast to get into and then eq
 
 ```bash
 # Clone or download this repository
-git clone [your-repo-url]
-cd josh-link-in-bio
+git clone joshwithers/linkinbio
+cd linkinbio
 
 # Install dependencies
 npm install
 
 # Start development server
 npm run dev
+
+# Build for distribution into /dist
+npm run build
+
+# Preview build
+npm run preview
+
 ```
 
 ### Configuration
@@ -302,3 +305,9 @@ Wedding Celebrant & Web Developer
 ---
 
 *Built with ❤️ using Astro and modern web technologies*
+
+## Screenshots
+
+![Website preview on mobile [⌘](https://ik.imagekit.io/withers/Website_preview_on_mobile_4wJ5wE4X0)](https://ik.imagekit.io/withers/Website_preview_on_mobile_4wJ5wE4X0)
+
+![Safari web preview [⌘](https://ik.imagekit.io/withers/Safari_web_preview_Gzd4OdPJm1)](https://ik.imagekit.io/withers/Safari_web_preview_Gzd4OdPJm1)
