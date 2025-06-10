@@ -2,7 +2,7 @@
 
 A modern, customisable link-in-bio theme built with Astro and Tailwind CSS. Created by Josh Withers for personal branding and professional networking.
 
-Lightly adapted from Trevor Tyler Lee's [Treelink](https://treelink.app) app.
+Inspired by Trevor Tyler Lee's [Treelink](https://treelink.app) app.
 
 ## 🎨 About This Theme
 
@@ -61,11 +61,11 @@ This theme works with any static hosting provider:
 
 ## 📈 Performance
 
-This theme is optimized for performance:
+This theme is optimised for performance:
 
 - **Lighthouse Scores**: 100/100/100/100 (Performance, Accessibility, Best Practices, SEO)
 - **Static Generation**: Pre-built pages for fast loading
-- **Optimised Images**: Automatic image optimization with Astro
+- **Optimised Images**: Automatic image optimisation with Astro
 - **Minimal JavaScript**: Only essential JS for theme switching
 - **RSS Caching**: Efficient RSS feed caching and generation
 
