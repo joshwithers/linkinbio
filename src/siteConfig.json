@@ -9,14 +9,6 @@
     "email": "josh@withers.co",
     "ctaTitle": "INQUIRE TODAY!!"
   },
-  "footer": {
-    "barcode": {
-      "src": "/barcode.png",
-      "alt": "Barcode",
-      "width": 200,
-      "height": 50
-    }
-  },
   "profilePicture": "/profile-picture.webp",
   "url": "https://joshwithers.com.au",
   "recentPosts": {
@@ -175,5 +167,13 @@
         "url": "https://simsdirect.refr.cc/give10-get10/u/josh06?s=esp&t=cp"
       }
     ]
+  },
+  "footer": {
+    "barcode": {
+      "src": "/barcode.png",
+      "alt": "Barcode",
+      "width": 200,
+      "height": 50
+    }
   }
 }

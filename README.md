@@ -25,34 +25,6 @@ I built this to be fast, not just fast loading, but fast to get into and then eq
 - **SEO Optimised**: Built-in meta tags, Open Graph images, and structured data
 - **Performance Focused**: Achieves perfect 100/100/100/100 web vitals scores usually, with a few edge cases getting close to 100 because of the mirroring effect causing a non-problem accessibility issue.
 - **Customisable Links**: Support for both icon-based and custom text links
-- **Professional Branding**: Clean typography and professional layout
-
-## 🚀 Getting Started
-
-### Quick Start
-
-```bash
-# Clone or download this repository
-git clone joshwithers/linkinbio
-cd linkinbio
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for distribution into /dist
-npm run build
-
-# Preview build
-npm run preview
-
-```
-
-### Configuration
-
-The theme is configured through the `src/siteConfig.json` file. Here's what you can customise:
 
 ## Quick Start Checklist
 
@@ -115,6 +87,8 @@ Before customising the config, make sure you have:
 - **Profile Picture**: Replace `/src/assets/profile-picture.webp` with your own image (keep the same filename)
 
 ## Configuration Sections
+
+The theme is configured through the `src/siteConfig.json` file. Here's what you can customise:
 
 ### 1. Basic Information
 
@@ -291,20 +265,22 @@ Before customising the config, make sure you have:
 
   This approach keeps your site static and lightning-fast while ensuring RSS content stays current without manual intervention.
 
+  There's a high chance you're smarter than me and you can find a better way to do this. I'm considering building the webhook call into my other blogs publishing process, so this page only builds when I publish a post.
+
 ## 📄 License
 
-This project is licensed under CC0 1.0 - see the LICENSE file for details.
+This project is licensed under CC0 1.0 - see the LICENSE file for details. Basically it means you can do what you want with this, just don't blame me for it being awesome.
 
 ## 👨‍💻 Created By
 
-**Josh Withers**  
-Wedding Celebrant & Web Developer  
-[josh@withers.co](mailto:josh@withers.co)  
-[joshwithers.com.au](https://joshwithers.com.au)
+**[Josh Withers](https://joshwithers.com.au)**  
+[Wedding Celebrant](https://marriedbyjosh.com) & Amateur Developer
 
 ---
 
-*Built with ❤️ using Astro and modern web technologies*
+*Built with ❤️ using [Astro](https://astro.build) and modern web technologies*
+
+---
 
 ## Screenshots
 
