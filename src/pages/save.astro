@@ -1,0 +1,65 @@
+---
+import { SITE } from "@/siteConfig";
+
+// Conditionally disable prerendering if referral links are disabled
+export const prerender = SITE.referralLinks?.enabled ?? false;
+
+// If referral links are disabled, redirect to home
+if (!SITE.referralLinks?.enabled) {
+  return Astro.redirect('/');
+}
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SeoPage from "@/components/SeoPage.astro";
+import Introduction from "@/components/Introduction.astro";
+import CustomLink from "@/components/CustomLink.astro";
+import IconLink from "@/components/IconLink.astro";
+
+// Use referral links from config instead of hardcoded array
+const referralLinks = SITE.referralLinks?.links || [];
+
+// Optional: Define icon links for your referral partners
+const referralIconLinks = [
+  {
+    icon: "simple-icons:amazon",
+    url: "https://amazon.com/ref=your-code-here",
+  },
+  {
+    icon: "simple-icons:audible",
+    url: "https://audible.com/ref=your-code-here",
+  },
+  // Add more icon links as needed
+];
+---
+
+<BaseLayout>
+  <SeoPage 
+    slot="head" 
+    title="Save with My Referrals | Josh Withers"
+    description="Use my referral links to save on products and services I recommend because you save money and I make money."
+  />
+  
+  <main class="mx-auto max-w-4xl px-6 py-12">
+    <Introduction />
+    
+    <h2 class="mt-8 text-center text-2xl font-semibold text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
+      Save With My Referral Links
+    </h2>
+    
+    <!-- Display referral links -->
+    <ul class="grid gap-y-6 pb-12 pt-4">
+      {
+        referralLinks.map((link) => {
+          return <CustomLink url={link.url}>{link.title}</CustomLink>;
+        })
+      }
+    </ul>
+    
+    <!-- Add a link back to the main page -->
+    <div class="text-center mt-8 mb-12">
+      <a href="/" class="text-lightModeCustomLinkText dark:text-darkModeCustomLinkText hover:text-lightModeCustomLinkTextHover dark:hover:text-darkModeCustomLinkTextHover transition-colors">
+        ← Back to main page
+      </a>
+    </div>
+  </main>
+</BaseLayout>

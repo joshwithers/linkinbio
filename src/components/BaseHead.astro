@@ -1,0 +1,38 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Favicons from "@/components/Favicons.astro";
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta property="fb:app_id" content="672460749002837" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=yes"
+  />
+  <meta name="generator" content={Astro.generator} />
+  <meta
+    name="theme-color"
+    content="#fff"
+    media="(prefers-color-scheme: light)"
+  />
+  <meta
+    name="theme-color"
+    content="#1e3a5f"
+    media="(prefers-color-scheme: dark)"
+  />
+
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="me" href="https://social.lol/@withers">
+  
+  <ViewTransitions />
+  <Favicons />
+
+  <slot />
+</head>

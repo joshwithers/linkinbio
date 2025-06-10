@@ -1,0 +1,40 @@
+name: Scheduled RSS Feed Build
+
+on:
+  schedule:
+    # 6 AM Hobart (8 PM UTC previous day)
+    - cron: '0 20 * * *'
+    # 2 PM Hobart (4 AM UTC same day)  
+    - cron: '0 4 * * *'
+    # 10 PM Hobart (12 PM UTC same day)
+    - cron: '0 12 * * *'
+  
+  # Allow manual triggering for testing
+  workflow_dispatch:
+
+jobs:
+  trigger-build:
+    runs-on: ubuntu-latest
+    name: Trigger Cloudflare Pages Build
+    
+    steps:
+      - name: Trigger RSS Build
+        run: |
+          echo "Triggering Cloudflare Pages build for RSS feed update..."
+          response=$(curl -s -w "%{http_code}" -X POST "${{ secrets.CF_PAGES_WEBHOOK_URL }}")
+          http_code="${response: -3}"
+          
+          if [ "$http_code" -eq 200 ] || [ "$http_code" -eq 201 ]; then
+            echo "✅ Build triggered successfully (HTTP $http_code)"
+          else
+            echo "❌ Build trigger failed (HTTP $http_code)"
+            exit 1
+          fi
+          
+      - name: Log completion
+        run: |
+          echo "RSS feed build triggered at $(date -u)"
+          echo "Next builds scheduled for:"
+          echo "- 6 AM Hobart (8 PM UTC previous day)"
+          echo "- 2 PM Hobart (4 AM UTC same day)"  
+          echo "- 10 PM Hobart (12 PM UTC same day)"

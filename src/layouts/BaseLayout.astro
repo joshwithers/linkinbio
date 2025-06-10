@@ -1,0 +1,90 @@
+---
+import "@/styles/global.css";
+import BaseHead from "@/components/BaseHead.astro";
+import Footer from "@/components/Footer.astro";
+import siteConfig from "@/siteConfig.json";
+import profilePicture from "@/assets/profile-picture.webp";
+
+// Create schema with the processed image URL
+const schemaWithImage = {
+  ...siteConfig.schema,
+  mainEntity: {
+    ...siteConfig.schema.mainEntity,
+    image: new URL(profilePicture.src, Astro.site || Astro.url.origin).href
+  }
+};
+---
+
+<html lang="en">
+  <BaseHead>
+    <slot name="head" />
+  </BaseHead>
+  <body>
+    <svg class="hidden">
+      <defs>
+        <filter id="distort">
+          <feTurbulence baseFrequency="1 1" numOctaves="1" />
+          <feDisplacementMap in="SourceGraphic" scale="2" />
+        </filter>
+        <filter id="distort-mobile">
+          <feTurbulence baseFrequency="1 1" numOctaves="1" />
+          <feDisplacementMap in="SourceGraphic" scale="1.5" />
+        </filter>
+      </defs>
+    </svg>
+    
+    <div class="mirror-container">
+      <main id="main" class="organic_mess">
+        <slot />
+      </main>
+      <div id="mirror" class="mirror" aria-hidden="true"></div>
+    </div>
+    
+    <Footer />
+    
+    <script>
+      // Create mirror effect
+      document.addEventListener('DOMContentLoaded', () => {
+        const main = document.getElementById('main');
+        const mirror = document.getElementById('mirror');
+        
+        if (main && mirror) {
+          mirror.innerHTML = main.innerHTML;
+          
+          // Mark mirror content as decorative for screen readers
+          mirror.setAttribute('aria-hidden', 'true');
+          mirror.setAttribute('role', 'presentation');
+          
+          // Remove any interactive elements from mirror to prevent tab issues
+          const mirrorLinks = mirror.querySelectorAll('a, button, input, select, textarea');
+          mirrorLinks.forEach(element => {
+            element.setAttribute('tabindex', '-1');
+            element.setAttribute('aria-hidden', 'true');
+          });
+          
+          // Add random skew to sections
+          const sections = mirror.querySelectorAll('section');
+          sections.forEach(section => {
+            const skewX = Math.random() * 4 - 2;
+            const skewY = Math.random() * 4 - 2;
+            section.style.transform = `skew(${skewX}deg, ${skewY}deg)`;
+          });
+          
+          // Apply filter based on screen size
+          const applyFilter = () => {
+            if (window.innerWidth <= 600) {
+              // Disable filter on mobile to prevent scrolling issues
+              document.body.style.filter = 'none';
+            } else {
+              document.body.style.filter = 'url("#distort")';
+            }
+          };
+          
+          applyFilter();
+          window.addEventListener('resize', applyFilter);
+        }
+      });
+    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(schemaWithImage)}></script>
+  </body>
+</html>

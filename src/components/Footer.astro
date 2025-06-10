@@ -1,0 +1,26 @@
+---
+import { SITE } from "@/siteConfig";
+const currentDate = new Date();
+const formattedDate = currentDate.toLocaleDateString('en-AU', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+---
+
+<footer class="my-8 text-center system-text italic">
+  <hr class="border-orange-900 my-4" />
+  <p>Last updated: {formattedDate}</p>
+  <p>CC0 1.0.</p>
+  <p>Machine washable. Do not spin dry.</p>
+  <p>100% recycled HTML/CSS/JS/Astro.</p>
+  <div class="my-2">
+    <img 
+      src={SITE.footer.barcode.src} 
+      alt={SITE.footer.barcode.alt} 
+      width={SITE.footer.barcode.width}
+      height={SITE.footer.barcode.height}
+      class="mx-auto" 
+    />
+  </div>
+</footer>

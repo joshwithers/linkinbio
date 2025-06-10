@@ -1,0 +1,9 @@
+---
+const { url } = Astro.props;
+---
+
+<li class="my-2">
+  <a href={url} class="italic hover:text-orange-900">
+    <slot />
+  </a>
+</li>

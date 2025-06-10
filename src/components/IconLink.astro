@@ -1,0 +1,18 @@
+---
+import { Icon } from "astro-icon/components";
+import { SITE } from "@/siteConfig";
+
+const { icon, url, name = SITE.name } = Astro.props;
+---
+
+<a
+  href={url}
+  aria-label={`Visit ${name} on ${icon}`}
+  rel="me"
+  class="inline-block mx-1 md:mx-2 border-2 border-orange-900 p-1 md:p-2 hover:border-orange-900"
+>
+  <Icon
+    name={icon}
+    class="size-5 md:size-6 text-orange-900 hover:text-orange-900"
+  />
+</a>

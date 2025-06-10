@@ -1,0 +1,52 @@
+---
+import { SITE } from "@/siteConfig";
+
+import Introduction from "@/components/Introduction.astro";
+import Services from "@/components/Services.astro";
+import RecentPosts from "@/components/RecentPosts.astro";
+import ReferralLinks from "@/components/ReferralLinks.astro";
+import IconLink from "@/components/IconLink.astro";
+import CustomLink from "@/components/CustomLink.astro";
+---
+
+<Introduction />
+
+<section class="social-links my-8 text-center">
+  <h2>CONNECT</h2>
+  <div class="flex justify-center gap-4 my-4">
+    {SITE.iconLinks.map((link) => (
+      <IconLink url={link.url} icon={link.icon} />
+    ))}
+  </div>
+</section>
+
+<Services />
+
+<section class="links my-8">
+  <h2>LINKS</h2>
+  <ul class="mt-4">
+    {SITE.customLinks.map((link) => (
+      <CustomLink url={link.url}>{link.title}</CustomLink>
+    ))}
+  </ul>
+</section>
+
+<RecentPosts />
+
+<section class="about my-8">
+  <h2>{SITE.about.title}</h2>
+  <p class="mt-4">
+    {SITE.about.content}
+  </p>
+</section>
+
+<ReferralLinks />
+
+<section class="cta my-8 text-center">
+  <h2>{SITE.contact.ctaTitle}</h2>
+  <p class="mt-4">
+    <a href={`mailto:${SITE.contact.email}`} class="font-mono text-orange-900">
+      EMAIL: &lt;{SITE.contact.email}&gt;
+    </a>
+  </p>
+</section>

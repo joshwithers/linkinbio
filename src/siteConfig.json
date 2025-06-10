@@ -1,0 +1,179 @@
+{
+  "name": "Josh Withers",
+  "bio": "I'm an Australian wedding creative, nerd, husband and dad, posting from a quiet corner of earth with decent wifi and wild ambition. Saying nice things for a living since 1996.",
+  "about": {
+    "title": "About Josh",
+    "content": "I'm Josh Withers — the celebrant, web strategist, and microphone-wielding mischief-maker you call when words matter. I marry legends around the world with ceremonies that are real, joyful, and wildly personal. I co-run The Elopement Collective with my wife Britt, help celebrants and creative business owners grow what matters, and build everything I do around being a present husband and dad in Tasmania. No fluff. No filler. Just meaningful work for people who care."
+  },
+  "contact": {
+    "email": "josh@withers.co",
+    "ctaTitle": "INQUIRE TODAY!!"
+  },
+  "footer": {
+    "barcode": {
+      "src": "/barcode.png",
+      "alt": "Barcode",
+      "width": 200,
+      "height": 50
+    }
+  },
+  "profilePicture": "/profile-picture.webp",
+  "url": "https://joshwithers.com.au",
+  "recentPosts": {
+    "enabled": true,
+    "count": 30,
+    "feeds": [
+      "https://marriedbyjosh.com/rss",
+      "https://thesmh.com.au/rss.xml",
+      "https://joshwithers.blog/feed.xml",
+      "https://celebrant.institute/author/joshuawithers/feed",
+      "https://mail.celebrant.institute/rss"
+    ]
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "dateCreated": "2025-05-29",
+    "dateModified": "2025-05-29",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Josh Withers",
+      "alternateName": "Josh Withers",
+      "description": "I'm a wedding celebrant, I marry people all around the world! Build cool websites for small local businesses, help wedding businesses with SEO, and help Britt run a global elopement empire — all from a quiet corner of wherever I am today with decent Wi-Fi and wild ambition.",
+      "url": "https://joshwithers.com.au",
+      "jobTitle": "Wedding Celebrant",
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Married By Josh"
+        },
+        {
+          "@type": "Organization",
+          "name": "The Elopement Collective"
+        },
+        {
+          "@type": "Organization",
+          "name": "The Celebrant Institute"
+        },
+        {
+          "@type": "Organization",
+          "name": "Unpopular"
+        },
+        {
+          "@type": "Organization",
+          "name": "Withers Co."
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/hellojoshwithers/",
+        "https://x.com/joshuawithers",
+        "https://www.instagram.com/hellojoshwithers/",
+        "https://www.youtube.com/@hellojoshwithers",
+        "https://www.linkedin.com/in/hellojoshwithers",
+        "https://au.pinterest.com/hellojoshwithers/",
+        "https://www.threads.com/@hellojoshwithers",
+        "https://social.lol/@withers",
+        "https://www.facebook.com/withersweddings",
+        "https://bsky.app/profile/josh.withers.co",
+        "https://withers.co",
+        "https://celebrant.institute",
+        "https://joshwithers.blog",
+        "https://elopementcollective.com",
+        "https://marriedbyjosh.com"
+      ]
+    }
+  },
+  "iconLinks": [
+    {
+      "icon": "simple-icons:instagram",
+      "url": "https://instagram.com/joshuawithers"
+    },
+    {
+      "icon": "simple-icons:youtube",
+      "url": "https://youtube.com/@hellojoshwithers"
+    },
+    {
+      "icon": "facebook",
+      "url": "https://facebook.com/hellojoshwithers"
+    },
+    {
+      "icon": "threads",
+      "url": "https://www.threads.com/@hellojoshwithers"
+    },
+    {
+      "icon": "x",
+      "url": "https://x.com/joshuawithers"
+    },
+    {
+      "icon": "mastodon",
+      "url": "https://social.lol/@withers"
+    }
+  ],
+  "customLinks": [
+    {
+      "title": "💕 marriedbyjosh.com",
+      "url": "https://marriedbyjosh.com"
+    },
+    {
+      "title": "⛰️ elopement collective™️",
+      "url": "https://elopementcollective.com"
+    },
+    {
+      "title": "📷 my photographic portfolio",
+      "url": "https://joshwithers.photos"
+    },
+    {
+      "title": "🍌 personal blog",
+      "url": "https://joshwithers.blog"
+    },
+    {
+      "title": "💻 web and seo agency",
+      "url": "https://unpopular.au"
+    },
+    {
+      "title": "💻 web and seo blog",
+      "url": "https://thesmh.com.au"
+    },
+    {
+      "title": "🎙️ master of ceremonies",
+      "url": "https://joshuawithers.au"
+    },
+    {
+      "title": "📠 retro celebrant website",
+      "url": "https://marriedbyjosh.au"
+    },
+    {
+      "title": "🗣️ celebrant.institute",
+      "url": "https://celebrant.institute"
+    },
+    {
+      "title": "💰 referral links",
+      "url": "/save/"
+    },
+    {
+      "title": "🏡 withers.co",
+      "url": "https://withers.co"
+    }
+  ],
+  "referralLinks": {
+    "enabled": true,
+    "links": [
+      {
+        "title": "10% off Fastmail, my preferred email service",
+        "url": "https://join.fastmail.com/9c33c16c"
+      },
+      {
+        "title": "ForestVPN 50% off",
+        "url": "https://forestvpn.com/?ref=zckX1fPHcy"
+      },
+      {
+        "title": "Roamless travel eSIM with code JOSHUAWX8 for $5 credit",
+        "url": "https://roamless.com"
+      },
+      {
+        "title": "Simify travel eSIM for $5 credit",
+        "url": "https://simsdirect.refr.cc/give10-get10/u/josh06?s=esp&t=cp"
+      }
+    ]
+  }
+}

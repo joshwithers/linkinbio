@@ -1,0 +1,24 @@
+---
+// Define your services and prices
+const services = [
+  { name: "WEDDING CELEBRANT", price: "PRICELESS" },
+  { name: "PROFESSIONAL MC", price: "$$$$" },
+  { name: "WEBSITE DESIGN", price: "GOOD DEAL!" },
+  { name: "SEO AND GEO", price: "WORTH IT" },
+  { name: "BEING PROUD OF YOU", price: "$POA" },
+];
+---
+
+<section class="services my-8">
+  <h2>SERVICES AVAILABLE</h2>
+  
+  <div class="mt-4">
+    {services.map((service, index) => (
+      <div class="line">
+        <span class="line-label">{index + 1}. {service.name}</span>
+        <span class="line-dots"></span>
+        <span class="line-price">{service.price}</span>
+      </div>
+    ))}
+  </div>
+</section>

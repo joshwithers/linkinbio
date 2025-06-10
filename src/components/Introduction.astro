@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import { SITE } from "@/siteConfig";
+import profilePicture from "@/assets/profile-picture.webp";
+---
+
+<div class="text-center my-8">
+  <Image
+    src={profilePicture}
+    alt={SITE.name}
+    height={256}
+    width={256}
+    loading="eager"
+    draggable="false"
+    class="mx-auto size-32 border-2 border-orange-900"
+  />
+  <h1>{SITE.name}</h1>
+  <p class="italic">
+    {SITE.bio}
+  </p>
+</div>
