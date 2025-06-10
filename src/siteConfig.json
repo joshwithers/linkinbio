@@ -77,6 +77,9 @@
   },
   "iconLinks": [
     {
+      "icon": "simple-icons:github",
+      "url": "https://github.com/joshwithers/linkinbio"
+    },{
       "icon": "simple-icons:instagram",
       "url": "https://instagram.com/joshuawithers"
     },
@@ -103,8 +106,8 @@
   ],
   "customLinks": [
     {
-      "title": "💕 marriedbyjosh.com",
-      "url": "https://marriedbyjosh.com"
+      "title": "💾 download this Astro theme",
+      "url": "https://github.com/joshwithers/linkinbio"
     },
     {
       "title": "⛰️ elopement collective™️",
